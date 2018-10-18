@@ -13,7 +13,7 @@ Domain Path:  /languages
 */
 
 function sds_fiapl( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
-	return '<a href="' . get_bloginfo( 'url' ) . '/?p=' . $post_thumbnail_id . '">' . $html . '</a>';
+	return '<a href="' . get_bloginfo( 'url' ) . '/?p=' . $post_thumbnail_id . '" class="sds_fiapl">' . $html . '</a>';
 
 }
 add_filter( 'post_thumbnail_html', 'sds_fiapl', 10, 5 );
